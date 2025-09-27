@@ -1,0 +1,44 @@
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.timer-display {
+    display: flex;
+    gap: 15px;
+    font-size: 1.1rem;
+}
+
+.countdown-segment {
+    display: flex;
+    flex-direction: column;
+    /* Lighter background for better contrast with red text */
+    background-color: #ffe6e6; 
+    padding: 6px 8px;
+    border-radius: 4px;
+    min-width: 40px;
+}
+
+.countdown-value {
+    /* FIX: Explicitly set text color to Red */
+    font-size: 1.2em;
+    color: #FF0000; 
+}
+
+.countdown-label {
+    font-size: 0.7em;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.launch-message {
+    font-size: 1.2rem;
+    color: #1a9f5d;
+    font-weight: bold;
+}

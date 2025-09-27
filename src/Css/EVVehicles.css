@@ -1,0 +1,114 @@
+/* Styling for the EV Vehicles section */
+.ev-vehicles-container {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 40px auto; 
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+    /* EV specific color for the border */
+    border-bottom: 2px solid #5849ff; 
+    padding-bottom: 10px;
+}
+
+/* --- SLIDESHOW / CARD LAYOUT --- */
+
+/* Wrapper for spacing between slides (Creates the gap) */
+.card-wrapper {
+    padding: 10px 15px; /* Adds 10px vertical and 15px horizontal gap */
+}
+
+.vehicle-card {
+    /* Main card container styling */
+    display: flex; 
+    flex-direction: column; 
+    text-align: center;
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    
+    /* Hover and visual effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+    overflow: hidden; 
+    height: auto; /* Ensures card adjusts to content */
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0; /* Ensures no conflicting external margins */
+    padding: 0; /* Ensures content starts from edge */
+}
+
+.vehicle-card:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image/Placeholder Area */
+.vehicle-image {
+    width: 100%;
+    /* Final agreed-upon image height for the larger card */
+    height: 280px; 
+    object-fit: cover; /* Ensures image covers the space without distortion */
+    background-color: #f0f0f0; 
+    
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.vehicle-image.vehicle-placeholder {
+    height: 280px; 
+    background-color: #e0e0e0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* --- Vehicle Details --- */
+
+.vehicle-details {
+    /* Increased padding for more inner vertical space */
+    padding: 25px; 
+    text-align: left;
+}
+
+.vehicle-name {
+    /* Increased font size for clarity */
+    font-size: 1.25rem; 
+    color: #5849ff;
+    margin-bottom: 8px;
+}
+
+.vehicle-price {
+    /* Prominent price display */
+    font-size: 1.5rem; 
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.vehicle-mileage, 
+.vehicle-shop {
+    /* Standard details text size */
+    font-size: 1rem; 
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Placeholder text inside the card */
+.card-placeholder-text {
+    color: #5849ff; 
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Empty State */
+.no-vehicles {
+    grid-column: 1 / -1; 
+    text-align: center;
+    padding: 40px;
+    color: #999;
+    font-size: 1.1rem;
+}
