@@ -1,0 +1,105 @@
+/* --- PROFESSIONAL STYLING FOR FOOTER --- */
+.app-footer-container {
+    background-color: #f8f8f8; /* Light gray/off-white background for cleanliness */
+    color: #444; /* Darker, sophisticated text color */
+    padding-top: 50px;
+    margin-top: 60px; /* Increased space above the footer */
+    border-top: 1px solid #eee; /* Subtle top border */
+    width: 100%;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    max-width: 1280px; /* Wider content area */
+    margin: 0 auto;
+    padding: 0 40px; /* Increased side padding */
+}
+
+.footer-section {
+    flex-basis: 22%; /* Ensures four columns fit well */
+    min-width: 200px; 
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    font-size: 1.05rem;
+    font-weight: 700; /* Bold titles */
+    margin-bottom: 20px;
+    color: #333; /* Dark titles */
+    text-transform: uppercase; /* Professional look */
+    letter-spacing: 0.5px;
+}
+
+/* Styling for links and text */
+.footer-links ul, .contact-info p {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-links a, .contact-info p {
+    color: #666; /* Subtle link color */
+    text-decoration: none;
+    line-height: 1.7; /* Increased line spacing */
+    transition: color 0.2s;
+}
+
+.footer-links a:hover, .contact-info a:hover {
+    color: #5849ff; /* Highlight color on hover */
+    text-decoration: underline;
+}
+
+/* Contact Info specific adjustments */
+.contact-info p {
+    margin-bottom: 12px;
+}
+
+/* Footer Bottom Bar (Credits) */
+.footer-bottom-bar {
+    border-top: 1px solid #ddd;
+    background-color: #e9e9e9; /* Slightly darker bottom bar */
+    padding: 15px 40px;
+    margin-top: 20px;
+}
+
+.footer-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.developed-by {
+    font-weight: 600;
+    color: #5849ff; /* Team name highlight */
+}
+
+/* Responsive adjustment for tablets/small screens */
+@media (max-width: 1024px) {
+    .footer-section {
+        flex-basis: 45%; /* Two columns */
+    }
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 600px) {
+    .footer-content-wrapper {
+        padding: 0 20px;
+    }
+    .footer-section {
+        flex-basis: 100%; /* Single column stack */
+        min-width: unset;
+    }
+    .footer-bottom-wrapper {
+        flex-direction: column;
+    }
+    .footer-bottom-wrapper p {
+        margin: 5px 0;
+    }
+}
