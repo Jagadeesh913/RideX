@@ -1,0 +1,51 @@
+/* Styling for the Petrol Vehicles section */
+.petrol-vehicles-container {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 40px auto; /* Adds more vertical space above and below */
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+/* Grid layout for displaying the vehicle cards */
+.vehicles-grid {
+    display: grid;
+    /* Create responsive columns, maybe 4 on a large screen */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+}
+
+.vehicle-card {
+    /* Slightly different visual style for distinction */
+    height: 300px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    
+    /* Center the placeholder text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    transition: transform 0.2s;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-3px); /* Subtle lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-placeholder-text {
+    color: #999;
+    font-size: 1rem;
+    font-style: italic;
+}
