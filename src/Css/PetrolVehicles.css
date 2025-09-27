@@ -1,0 +1,118 @@
+/* Styling for the Vehicle Sections (Applies to both Petrol and EV) */
+.petrol-vehicles-container,
+.ev-vehicles-container {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 40px auto; 
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+    /* Use a specific color for EV, generic for Petrol (as defined in your JS/HTML) */
+    border-bottom: 2px solid #f0f0f0; 
+    padding-bottom: 10px;
+}
+
+/* --- Slideshow / Card Layout --- */
+
+/* Wrapper to handle spacing between slides (from react-slick requirement) */
+.card-wrapper {
+    padding: 10px; 
+}
+
+.vehicle-card {
+    /* Main card container styling */
+    display: flex; 
+    flex-direction: column; /* Stacks image and details vertically */
+    text-align: center;
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    
+    /* Hover and visual effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+    overflow: hidden; 
+    height: auto; /* Allows height to adjust to content */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-3px); /* Subtle lift effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image/Placeholder Area */
+.vehicle-image {
+    width: 100%;
+    /* Final agreed-upon image height */
+    height: 280px; 
+    object-fit: cover; 
+    background-color: #f0f0f0; /* Fallback/Placeholder background */
+    
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.vehicle-image.vehicle-placeholder {
+    /* Style for the empty div placeholder when data is missing */
+    height: 280px; 
+    background-color: #e0e0e0;
+}
+
+/* --- Vehicle Details --- */
+
+.vehicle-details {
+    /* Increased padding for more space */
+    padding: 25px; 
+    text-align: left;
+}
+
+.vehicle-name {
+    /* Increased font size for clarity */
+    font-size: 1.25rem; 
+    color: #5849ff;
+    margin-bottom: 8px;
+}
+
+.vehicle-price {
+    /* Prominent price display */
+    font-size: 1.5rem; 
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.vehicle-mileage, 
+.vehicle-shop {
+    /* Details text size */
+    font-size: 1rem; 
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* --- Empty State --- */
+.no-vehicles {
+    grid-column: 1 / -1; 
+    text-align: center;
+    padding: 40px;
+    color: #999;
+    font-size: 1.1rem;
+}
+/* --- Slideshow / Card Layout --- */
+
+/* Wrapper for spacing between slides (CRITICAL FOR THE GAP) */
+.card-wrapper {
+    /* Maintain vertical padding (top/bottom) and increase horizontal padding (left/right) */
+    padding: 10px 15px; /* Added 15px horizontal padding */
+}
+
+.vehicle-card {
+    /* Ensure the card itself has no external margin/padding that conflicts */
+    margin: 0;
+    /* ... rest of existing styles ... */
+}

@@ -1,0 +1,108 @@
+:root {
+  --color-primary: #5849ff; /* Retaining your brand color */
+  --color-surface: #ffffff;
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #c2c9d1; /* Lightened secondary text for dark background */
+  --color-border-dark: #374151; /* Dark border color for contrast */
+  --font-display: 'Poppins', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+/* --- Main Footer Container (SET TO BLACK) --- */
+.app-footer-container {
+  /* FIX: Setting a deep, near-black background */
+  background-color: #111827; 
+  color: var(--color-text-secondary);
+  padding: 4rem 1.5rem 2rem;
+  margin-top: 4rem;
+  /* Use the dark border color */
+  border-top: 1px solid var(--color-border-dark);
+  width: 100%;
+  font-family: var(--font-sans);
+}
+
+/* --- Content Wrapper (Grid Layout) --- */
+.footer-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* --- Section Styling --- */
+.footer-section h3 {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  /* Use the primary brand color for section titles */
+  color: var(--color-primary); 
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* --- Links and Text Styling --- */
+.footer-links ul, .contact-info p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer-links a, .contact-info a {
+  /* Ensuring links are light grey for contrast */
+  color: var(--color-text-secondary); 
+  text-decoration: none;
+  line-height: 2;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover, .contact-info a:hover {
+  /* Blue highlight on hover */
+  color: var(--color-primary); 
+}
+
+/* --- Contact Info Specifics --- */
+.contact-info p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.contact-info p strong {
+  /* Ensures bold text is bright white for contrast */
+  color: var(--color-surface); 
+  font-weight: 600;
+}
+
+/* --- Footer Bottom Bar (Credits) --- */
+.footer-bottom-bar {
+  /* Use the darker color for the dividing line */
+  border-top: 1px solid var(--color-border-dark); 
+  padding-top: 2rem;
+  margin-top: 3rem;
+  background-color: transparent;
+}
+
+.footer-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.developed-by {
+  font-weight: 500;
+}
+
+.developed-by strong {
+  /* Blue highlight for team name */
+  color: var(--color-primary); 
+  font-weight: 600;
+}
