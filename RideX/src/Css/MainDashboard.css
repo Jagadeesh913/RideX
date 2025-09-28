@@ -1,0 +1,138 @@
+:root {
+  --color-primary: #3b82f6;
+  --color-accent: #f97316;
+  --color-surface: #ffffff;
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-border: #e2e8f0;
+  --font-display: 'Poppins', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+}
+*/
+
+/* --- Main Container --- */
+.main-dashboard-container {
+  padding: 2rem 0; /* Add vertical spacing */
+  width: 100%;
+}
+
+/* --- Section Title --- */
+.dashboard-title {
+  font-family: var(--font-display);
+  font-size: 2.25rem; /* 36px */
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-align: center;
+  margin-bottom: 2rem; /* More space below title */
+}
+
+/* --- Deals Grid Layout --- */
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem; /* More space between cards */
+  max-width: 1280px;
+  margin: 0 auto 4rem auto; /* Center grid and add space below */
+  padding: 0 1.5rem;
+}
+
+/* --- Deal Card: The "High-Tech" Look --- */
+.deal-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem; /* 12px */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  height: auto; /* Let content define height */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.deal-image {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Enforce consistent image shape */
+  object-fit: cover;
+}
+
+.deal-info {
+  padding: 1.25rem; /* More padding */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows footer content to stick to bottom */
+  justify-content: space-between;
+}
+
+/* --- Card Content --- */
+.deal-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: var(--color-accent);
+  color: var(--color-surface);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px; /* Pill shape */
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.deal-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.release-date-text {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.price-details {
+  margin-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.old-price {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  text-decoration: line-through;
+}
+
+.deal-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* --- Placeholder Card --- */
+.placeholder-deal {
+  background-color: var(--color-background-hover);
+  border: 2px dashed var(--color-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.75rem;
+  min-height: 400px; /* Give it a consistent height */
+}
+
+.deal-placeholder-text {
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
