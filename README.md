@@ -1,4 +1,3 @@
-=======
 # 🏍️ RideX: The Ultimate Two-Wheeler Marketplace
 
 ## Welcome to RideX! Your Future of Vehicle Shopping.
@@ -62,4 +61,4 @@ The backend is structured to support modular, role-based operations and is prepa
 | **Rahul Das** | **Filtering & Features:** Implemented the full **Search and Multi-Parameter Filtering Logic**. Prepared the codebase for EMI and finance tool integration. |
 | **Naga Srinivasa Rao Kotapati** | **Visual Design & Components:** Implemented and styled the responsive **Image Carousels**, fixed image loading issues, and focused on overall component excellence. |
 | **Vasam Jeshwanth** | **User Conversion & Flow:** Designed and implemented the complete **Test Ride Booking Flow**, including the vehicle detail modal and the redirect to the final booking page. |
->>>>>>> 56545ec (frontend+backend phase)
+
